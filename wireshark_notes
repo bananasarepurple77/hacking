@@ -1,0 +1,13 @@
+Opening another wireshark in macOS:
+open -n /Applications/Wireshark.app
+
+Filter that works for string and Hexadecimal:
+frame contains "candy"
+or 00:01 format for Hex.
+
+FTP
+To convert a FTP stream to a file:
+1. Filter by ftp-data, notice the file size
+2. follow stream
+3. Note the file type and convert to Raw on the popup
+4. Save the file, ensuring to correctly set the filetype.

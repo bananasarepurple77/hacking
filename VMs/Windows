@@ -1,8 +1,6 @@
 1. Download Media creation tool from here:
 https://www.microsoft.com/en-ca/software-download/windows10
-
-2. Reboot machine
-3. Open, then select 'Creat installation media'
-4. Uncheck "Use the recommended options". Ensure it's 64-bit
-5. Select ISO file and where to save it.
+2. Open, then select 'Creat installation media'
+3. Uncheck "Use the recommended options". Ensure it's 64-bit
+4. Select ISO file and where to save it.
 The ISO file is a virtual and portable replica of a physical disk, used for the OS installation, software distributions, and backups.

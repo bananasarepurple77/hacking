@@ -1,0 +1,21 @@
+
+File uploads
+1. long strings
+2. special characters
+```python
+ᗡᖇᔕᚺᘏᔕᒪᒯᑎᑌᖇᖉᐸᔕ ᗷᔕᔥᘏᔕ ᗰᒪᗝᖇᒷ ᖇᖇᔕ ᖴᗩᔕᖇᑎᗺᖇᓽ ᖉᔕᒯᖇᔕᐸᖇᖉᘏᔕᖇᔥᖇᔠ
+```
+This string contains a mix of Latin, Greek, and Cyrillic characters.
+3. malformed files (e.g. Uploading malformed EPUB missing content.opf)
+4. Uploading unsupported file
+5. Uploading .bat script file
+6. Uploading .txt with 10,000 characters. Uploading .txt with 100,000 characters (freeze)
+8. Uploading empty 0‑byte TXT/EPUB file
+9. Renaming .jpg to .epub and uploading
+10. Uploading ZIP file renamed as .epub
+11. Uploading file with path‑traversal filename (../../test.txt)
+12. Uploading TXT containing escape sequences (\n\t\r<>&)
+13. EPUB containing extremely large embedded image
+14. Emoji‑heavy TXT file
+15. EPUB missing metadata fields
+16. Data exposure via LocalCache storing screenshots

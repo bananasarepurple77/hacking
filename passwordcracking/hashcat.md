@@ -10,6 +10,20 @@ https://hashes.com/en/tools/hash_identifier
 Once tested check the "status" and may need to run command again with "--show" option included.
 
 ```
+
+- [ Basic Examples ] -
+
+  Attack-          | Hash- |
+  Mode             | Type  | Example command
+ ==================+=======+==================================================================
+  Wordlist         | $P$   | hashcat -a 0 -m 400 example400.hash example.dict
+  Wordlist + Rules | MD5   | hashcat -a 0 -m 0 example0.hash example.dict -r rules/best64.rule
+  Brute-Force      | MD5   | hashcat -a 3 -m 0 example0.hash ?a?a?a?a?a?a
+  Combinator       | MD5   | hashcat -a 1 -m 0 example0.hash example.dict example.dict
+  Association      | $1$   | hashcat -a 9 -m 500 example500.hash 1word.dict -r rules/best64.rule
+```
+
+```
 - [ Hash modes ] -
 
       # | Name                                                       | Category
@@ -486,4 +500,16 @@ Once tested check the "status" and may need to run command again with "--show" o
   27700 | MultiBit Classic .wallet (scrypt)                          | Cryptocurrency Wallet
   22700 | MultiBit HD (scrypt)                                       | Cryptocurrency Wallet
   28200 | Exodus Desktop Wallet (scrypt)                             | Cryptocurrency Wallet
+```
+```
+- [ Attack Modes ] -
+
+  # | Mode
+ ===+======
+  0 | Straight: Uses a wordlist file (dict.txt) to test potential passwords. Rules can be added for modifications.
+  1 | Combination: Combines two different wordlists to create complex passwords.
+  3 | Brute-force: Tests all combinations based on a specified charset (mask), replacing outdated pure brute-force.
+  6 | Hybrid Wordlist + Mask: Takes words from a dictionary and appends/prepends mask-based characters (e.g., word + 2026).
+  7 | Hybrid Mask + Wordlist: Takes a mask (e.g., ?d?d) and appends/prepends words from a dictionary (e.g., 20 + word).
+  9 | Association: Compares a single wordlist against specific target hashes, similar to John the Ripper's single crack mode.
 ```

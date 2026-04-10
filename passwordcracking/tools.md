@@ -5,7 +5,7 @@ This will give options for -m, may need to try multiple.
 
 hashcat sha512-practice.txt wordlist.txt -m 1700
 
-Once tested check the "status".
+Once tested check the "status" and may need to run command again with "--show" option included.
 
 
 ##John

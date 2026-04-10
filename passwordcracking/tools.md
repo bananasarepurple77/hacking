@@ -1,7 +1,10 @@
 ##Hashcat
 hashcat sha512-practice.txt wordlist.txt
+
 This will give options for -m, may need to try multiple.
+
 hashcat sha512-practice.txt wordlist.txt -m 1700
+
 Once tested check the "status".
 
 

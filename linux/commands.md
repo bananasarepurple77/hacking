@@ -16,3 +16,9 @@ Cheatsheet
 >   redirects output (such as using cat to output a file) and direct it elsewhere.
 >>  same function of the > operator but appends the output rather than replacing (meaning nothing is overwritten).
 ```
+
+### Safe shutdown
+```
+sudo shutdown -h now
+sudo poweroff
+```

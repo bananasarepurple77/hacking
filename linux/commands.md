@@ -39,3 +39,5 @@ touch -r reference changeme
 env
 $VARIABLE
 
+###
+Strings

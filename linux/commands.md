@@ -5,6 +5,9 @@ https://docs.google.com/spreadsheets/d/1LcZpKIRh7qDFbL-yKj8nXdjCxrK6fuYANPvzZlFw
 Cheatsheet
 ```https://quickref.me/find.html```
 
+Finding SUID bit files
+```find / -perm -4000 -type f 2>/dev/null```
+https://gtfobins.org/gtfobins/head/
 
 ### grep
 ```https://quickref.me/grep```
@@ -22,3 +25,17 @@ Cheatsheet
 sudo shutdown -h now
 sudo poweroff
 ```
+### Cat
+Reading '-' file
+cat ./-
+
+### diff
+
+### touch
+Changing modified time of changeme file with reference file
+touch -r reference changeme
+
+### More
+env
+$VARIABLE
+

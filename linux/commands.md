@@ -49,9 +49,12 @@ touch -r reference changeme
 env
 $VARIABLE
 
-###
-Strings
+### Strings
 
-## File command
+### File command
 Can easily see all file types.
 `file file*`
+
+### Sort and uniq
+Only display lines that occur once.
+`sort file.txt | uniq -u`

@@ -4,14 +4,18 @@ https://docs.google.com/spreadsheets/d/1LcZpKIRh7qDFbL-yKj8nXdjCxrK6fuYANPvzZlFw
 ### find
 By default, find recursively looks for files and subfolders.
 Cheatsheet
-```https://quickref.me/find.html```
+`https://quickref.me/find.html`
 
 Finding SUID bit files
-```find / -perm -4000 -type f 2>/dev/null```
+`find / -perm -4000 -type f 2>/dev/null`
 https://gtfobins.org/gtfobins/head/
 
 Finding files/directories
-```find / -type f -iname '*filename*' 2>/dev/null
+`find / -type f -iname '*filename*' 2>/dev/null`
+
+Finding a file with 1033 bytes, not-executable, human readable.
+`find . -type f -size 1033c ! -executable -exec file '{}' \; | grep ASCII`
+
 
 ### grep
 ```https://quickref.me/grep```
@@ -45,3 +49,7 @@ $VARIABLE
 
 ###
 Strings
+
+## File command
+Can easily see all file types.
+`file file*`

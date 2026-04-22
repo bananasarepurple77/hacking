@@ -60,4 +60,9 @@ Only display lines that occur once.
 `sort file.txt | uniq -u`
 
 ### tr Translate
-cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+`cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'`
+
+### mkdir
+Creating a temporary directory in /tmp:
+`mktemp -d`
+This does not delete by itself.

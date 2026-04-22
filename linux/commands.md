@@ -58,3 +58,6 @@ Can easily see all file types.
 ### Sort and uniq
 Only display lines that occur once.
 `sort file.txt | uniq -u`
+
+### tr Translate
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'

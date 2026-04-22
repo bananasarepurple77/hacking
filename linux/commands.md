@@ -15,6 +15,8 @@ Finding files/directories
 
 Finding a file with 1033 bytes, not-executable, human readable.
 `find . -type f -size 1033c ! -executable -exec file '{}' \; | grep ASCII`
+`-exec file '{}' \;` For each file that passed the filters so far, run the file command on it.
+`! -perm /111` is equivalent to `!-executable`
 
 
 ### grep

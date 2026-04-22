@@ -2,12 +2,16 @@
 https://docs.google.com/spreadsheets/d/1LcZpKIRh7qDFbL-yKj8nXdjCxrK6fuYANPvzZlFwde8/edit?gid=2074172094#gid=2074172094
 
 ### find
+By default, find recursively looks for files and subfolders.
 Cheatsheet
 ```https://quickref.me/find.html```
 
 Finding SUID bit files
 ```find / -perm -4000 -type f 2>/dev/null```
 https://gtfobins.org/gtfobins/head/
+
+Finding files/directories
+```find / -type f -iname '*filename*' 2>/dev/null
 
 ### grep
 ```https://quickref.me/grep```

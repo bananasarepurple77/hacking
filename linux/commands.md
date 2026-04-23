@@ -66,3 +66,11 @@ Only display lines that occur once.
 Creating a temporary directory in /tmp:
 `mktemp -d`
 This does not delete by itself.
+
+### scptransfer
+Transfer file to pwd.
+`scp -P 2220 user@domain:sshkey.private .`
+
+### SSH
+SSH w/Private key file:
+`ssh -i sshkey.private host@domain -p 2220`

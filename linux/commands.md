@@ -87,6 +87,14 @@ nc or netcat is a command that allows to read and write data over a network conn
 OpenSSL is a library for secure communication over networks. It uses TLS and SSL cryptographic protocols that are, for example, used in HTTPS to secure the web traffic.
 `openssl s_client -connect host:port`
 
+### SUID
+The SUID bit replaces the 'x' in a file's permission. It allows a user to execute the file if 
+To give a file SETUID bit:
+`chmod u+s <filename>`
+Example from bandit:
+`bandit19@bandit:~$ ./bandit20-do cat /etc/bandit_pass/bandit20`
+This executes bandit20-do and since bandit20 is the owner and the file has the SUID bit for this owner, run the cat command for a file that only bandit20 has access to.
+
 
 
 

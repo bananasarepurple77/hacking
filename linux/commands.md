@@ -75,6 +75,11 @@ Transfer file to pwd.
 SSH w/Private key file:
 `ssh -i sshkey.private host@domain -p 2220`
 
+SSH also allows remote execution of commands by adding the commands after the common SSH expression. Examples:
+`ssh user@hostname -p 2220 /bin/bash`
+`ssh bandit18@bandit.labs.overthewire.org -p 2220 -t /bin/sh`
+This creates a pseudo terminal. A pseudoterminal works by creating a pair of devices: a master and a slave. When you write to the master, the input appears as if it was typed directly into the slave terminal. Conversely, any output to the slave terminal can be read from the master.
+
 ### Netcat
 nc or netcat is a command that allows to read and write data over a network connection. It can be used for TCP and UDP connections. To connect to a service (as client) on a network the command syntax is the following: nc <host> <port>. To create a server that listens to incoming packets, the command looks like this: nc -l <port>.
 

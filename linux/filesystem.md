@@ -8,3 +8,5 @@ Once created, you can move to this directory and use
 cp filename .
 mv filename better_filename
 ```
+## .bashrc
+.bashrc is run every time a terminal is loaded, including when SSH in.

@@ -74,3 +74,24 @@ Transfer file to pwd.
 ### SSH
 SSH w/Private key file:
 `ssh -i sshkey.private host@domain -p 2220`
+
+### Netcat
+nc or netcat is a command that allows to read and write data over a network connection. It can be used for TCP and UDP connections. To connect to a service (as client) on a network the command syntax is the following: nc <host> <port>. To create a server that listens to incoming packets, the command looks like this: nc -l <port>.
+
+### OpenSSL
+OpenSSL is a library for secure communication over networks. It uses TLS and SSL cryptographic protocols that are, for example, used in HTTPS to secure the web traffic.
+`openssl s_client -connect host:port`
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -83,6 +83,17 @@ This creates a pseudo terminal. A pseudoterminal works by creating a pair of dev
 ### Netcat
 nc or netcat is a command that allows to read and write data over a network connection. It can be used for TCP and UDP connections. To connect to a service (as client) on a network the command syntax is the following: nc <host> <port>. To create a server that listens to incoming packets, the command looks like this: nc -l <port>.
 
+#### onetime server
+A server that sends one message and then disconnects. we can use the pipe and echo to input the message.
+If a command needs to be run, but you don’t need to interact with it for a while and want to keep using the same terminal with other commands while the command is executing, you can use &. The ampersand will send the command in the background. This is a part of the Linux process management. Specifically, if you want to learn more about this, also look into the jobs command, it shows processes/commands/jobs running in the background and foreground.
+
+Example: `echo -n 'GbKksEFF4yrVs6il55v6gwY5aVje5f0j' | nc -l -p 1234 &`
+* -n removes the trailing line
+* | sends the output to the next command as input
+* nc starts a server on port 1234 and so when someone connects, send them whatever input you receive from the pipe, then close it. Essentially, the nc command turns netcat into a server, and a server must wait for a client to connect before sending anything such as the string "GbKksEFF4yrVs6il55v6gwY5aVje5f0j".
+* & runs the whole pipeline in the background. So my terminal is free to run other commands while the mini-server waits for a connection.
+* Alternative to '&', you could create a separate SSH connection to run more comands.
+
 ### OpenSSL
 OpenSSL is a library for secure communication over networks. It uses TLS and SSL cryptographic protocols that are, for example, used in HTTPS to secure the web traffic.
 `openssl s_client -connect host:port`

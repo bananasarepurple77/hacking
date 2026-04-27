@@ -24,7 +24,14 @@ A file starts with the first five columns which indicate at what time/interval t
 
 Next is the command/program that is to be executed which can be found in `/usr/bin/cronjob_filename.sh`
 
-
+## /etc/passwd
+* User account information
+* Readable to everyone
+* Line structure `username:password_field:UID:GID:GECOS:User_home_directory:login_shell`
+* Example `kali:x:1000:1001:Kali Linux:/home/kali:/bin/bash`
+* First non-root user usually gets UID 1000.
+* Password_field will probably be a placeholder, password is stored in /etc/shadow
+* note that it says the default shell for the user
 
 
 

@@ -57,6 +57,8 @@ Can easily see all file types.
 `file file*`
 
 ### Sort and uniq
+Sort command, by default, sorts alphabetically (ascending), but it can be customized to handle numbers, dates, and complex field-based data
+
 Only display lines that occur once.
 `sort file.txt | uniq -u`
 

@@ -21,6 +21,7 @@ Finding a file with 1033 bytes, not-executable, human readable.
 
 ### grep
 ```https://quickref.me/grep```
+-v  inverts search
 
 ### Operators
 ```

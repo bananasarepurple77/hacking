@@ -17,3 +17,7 @@ Contains all information that is required for version control. It contains infor
 * a log and more.
 
 A README file may contain a short explanation of the project, configuration and installation instructions, licensing information and more.
+
+Example of git clone:
+`git clone ssh://bandit27-git@bandit.labs.overthewire.org:2220/home/bandit27-git/repo`
+Notice the port is specified.

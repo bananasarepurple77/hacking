@@ -21,3 +21,7 @@ A README file may contain a short explanation of the project, configuration and 
 Example of git clone:
 `git clone ssh://bandit27-git@bandit.labs.overthewire.org:2220/home/bandit27-git/repo`
 Notice the port is specified.
+
+### Finding information with a repository
+`git log` shows us the commit log
+`git show <commit>` will show us the content of a commit (When creating a public repository it is important to be aware of the information you push to it since changes and previous versions are saved. So sensitive data, like passwords, could still be retrieved).
